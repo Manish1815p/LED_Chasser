@@ -1,0 +1,18 @@
+# LED_Chasser
+Date:18/09/19
+void setup()
+{
+  for(int i=1;i<8;i++)
+  pinMode(i, OUTPUT);
+}
+
+void loop()
+{
+  for(int i=1;i<8;i++)
+  {
+  digitalWrite(i, HIGH);
+  delay(100); // Wait for 100 millisecond(s)
+  digitalWrite(i, LOW);
+  delay(100); // Wait for 100 millisecond(s)
+  }
+}
